@@ -10,10 +10,13 @@
             height: 20px;
             
         }
+        div{
+            margin-top:20px;
+        }
         .custom-1[value]{
             -webkit-appearance: none;
             appearance: none;
-            margin-top:20px;
+            
         }
         .custom-1[value]::-webkit-progress-bar{
             background-color: grey;
@@ -34,14 +37,14 @@
     </style>
 </head>
 <body>
-    <label for="60">   Default Progress Bar
+    <label for="60">   Default Progress Bar 60%</label><br>
     <progress value = "60" max = "100"></progress> 
-    </label>
+    
     
     <div>
-        <label for="80">Custom Progress Bar
-            <progress value = "80" max = "100" class = "custom-1"></progress>
-        </label>
+        <label for="80">Custom Progress Bar 60%</label><br>
+            <progress value = "60" max = "100" class = "custom-1"></progress>
+        
     </div>
 </body>
 </html>
