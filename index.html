@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        progress[value]{
+            width:250px;
+            height: 20px;
+            
+        }
+        .custom-1[value]{
+            -webkit-appearance: none;
+            appearance: none;
+            margin-top:20px;
+        }
+        .custom-1[value]::-webkit-progress-bar{
+            background-color: grey;
+            
+            height :5px;
+            width:250px;
+
+            
+        }
+        .custom-1[value]::-webkit-progress-value{
+            background-color:crimson;
+
+            
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <label for="60">   Default Progress Bar
+    <progress value = "60" max = "100"></progress> 
+    </label>
+    
+    <div>
+        <label for="80">Custom Progress Bar
+            <progress value = "80" max = "100" class = "custom-1"></progress>
+        </label>
+    </div>
+</body>
+</html>
